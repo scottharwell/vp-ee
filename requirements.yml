@@ -4,6 +4,7 @@ collections:
   - ansible.windows
   - azure.azcollection
   - community.general
+  - f5networks.f5_modules
   - name: https://github.com/ansible-collections/cloud.azure_roles.git
     type: git
     version: main
