@@ -59,7 +59,7 @@ jobs:
         run: cp context/Containerfile context/Dockerfile
 
       - name: Set source platform to amd64 since the containers are not built for arm64
-        run: sed -i 's/FROM \$/FROM --platform=linux/amd64 \$/g' context/Dockerfile
+        run: sed -i 's/FROM \$/FROM --platform=linux\/amd64 \$/g' context/Dockerfile
 
       - name: Build Multiarch Containers
         id: dockerbuild
